@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-import { Card, Button, FormControl } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BiWind, BiCurrentLocation } from 'react-icons/bi';
 
@@ -38,8 +38,6 @@ export default class WeatherList extends Component {
 				}
 			});
 	};
-
-	//Component Lifecycle Callback
 	componentDidMount = () => {
 		this.getWeatherData('Toronto');
 	};
